@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1376314332285769932}
   - component: {fileID: 3643821605717387064}
   - component: {fileID: 1107479258987437531}
-  - component: {fileID: 2452148467837093191}
   m_Layer: 0
   m_Name: Enemy Ship 02 Mesh
   m_TagString: Untagged
@@ -79,19 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2452148467837093191
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301394586614862465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627086, y: 0.48463213, z: 0.14032462}
-  m_Center: {x: 0.00000047683716, y: -0.0000009536743, z: 0.00000023469329}
 --- !u!1 &3769384349391570355
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,6 +87,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551002738245826979}
+  - component: {fileID: 2886401505078895122}
+  - component: {fileID: 1095962630409361205}
   m_Layer: 0
   m_Name: Enemy Ship 02
   m_TagString: Untagged
@@ -123,3 +111,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 130.37001, z: 0}
+--- !u!114 &2886401505078895122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769384349391570355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e61af7d02f2c94a839951710a3938e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionFx: {fileID: 1045229084892861306, guid: 480878af62357414896d6eb87dd8db2a,
+    type: 3}
+--- !u!65 &1095962630409361205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769384349391570355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.906942, y: 3.7011566, z: 12.48733}
+  m_Center: {x: 0.05418396, y: 0, z: -0.024067402}
