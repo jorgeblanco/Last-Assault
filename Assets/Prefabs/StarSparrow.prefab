@@ -105,6 +105,9 @@ MonoBehaviour:
   controlPitchFactor: -30
   controlRollFactor: -60
   explosion: {fileID: 178793427833215983}
+  guns:
+  - {fileID: 2534420869923185772}
+  - {fileID: 1980424169336394322}
 --- !u!114 &2378120588029895627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +218,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed3180d6944c4a47bec16aa14d04511, type: 3}
+--- !u!1 &2534420869923185772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2855894654573642792, guid: eed3180d6944c4a47bec16aa14d04511,
+    type: 3}
+  m_PrefabInstance: {fileID: 328269456324632644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8008256481797499925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7758916574032251985, guid: eed3180d6944c4a47bec16aa14d04511,
@@ -391,6 +400,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed3180d6944c4a47bec16aa14d04511, type: 3}
+--- !u!1 &1980424169336394322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2855894654573642792, guid: eed3180d6944c4a47bec16aa14d04511,
+    type: 3}
+  m_PrefabInstance: {fileID: 4384760307540055674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6301936413054933547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7758916574032251985, guid: eed3180d6944c4a47bec16aa14d04511,

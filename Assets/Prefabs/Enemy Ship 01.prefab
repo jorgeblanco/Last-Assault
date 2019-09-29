@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionFx: {fileID: 1045229084892861306, guid: 480878af62357414896d6eb87dd8db2a,
     type: 3}
+  numHits: 2
 --- !u!65 &6897911156438507261
 BoxCollider:
   m_ObjectHideFlags: 0

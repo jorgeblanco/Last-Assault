@@ -20,12 +20,16 @@ public class Player : MonoBehaviour
     [Header("Death FX")]
     [SerializeField] private GameObject explosion;
 
+    [Header("Projectiles")]
+    [SerializeField] private GameObject[] guns;
+
     private float _xOffset;
     private float _yOffset;
     private float _horizontalThrow;
     private float _verticalThrow;
     private bool _controlsDisabled;
     private SceneLoader _sceneLoader;
+    private bool _isFiring;
 
     private void Start()
     {
@@ -37,6 +41,15 @@ public class Player : MonoBehaviour
         ProcessInput();
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
+    }
+
+    private void ProcessFiring()
+    {
+        foreach (var gun in guns)
+        {
+            gun.SetActive(_isFiring);
+        }
     }
 
     private void ProcessInput()
@@ -45,6 +58,7 @@ public class Player : MonoBehaviour
         
         _horizontalThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         _verticalThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        _isFiring = CrossPlatformInputManager.GetButton("Fire1");
     }
 
     private void ProcessTranslation()
