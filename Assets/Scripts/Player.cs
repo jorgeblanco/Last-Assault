@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject explosion;
 
     [Header("Projectiles")]
-    [SerializeField] private GameObject[] guns;
+    [SerializeField] private ParticleSystem[] guns;
 
     private float _xOffset;
     private float _yOffset;
@@ -48,7 +48,8 @@ public class Player : MonoBehaviour
     {
         foreach (var gun in guns)
         {
-            gun.SetActive(_isFiring);
+            var emissionModule = gun.emission;
+            emissionModule.enabled = _isFiring;
         }
     }
 
